@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradients"
+    android:textAlignment="center"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="288dp"
+        android:layout_height="204dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="151dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="376dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logomiaudos" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="396dp"
+        android:layout_height="289dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="69dp"
+        android:src="@drawable/felino"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="310dp"
+                android:layout_height="115dp"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginEnd="36dp"
+                android:layout_marginBottom="129dp"
+                android:text="Somos una App móvil, en la cual puedes encontrar tu proximo amigo felino. Estas a un paso de ser feliz."
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textColorHighlight="#000000"
+                android:textColorHint="#000000"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="194dp"
+                android:layout_height="57dp"
+                android:layout_marginStart="154dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="154dp"
+                android:layout_marginBottom="36dp"
+                android:onClick="irIngreso"
+                android:text="Ingresar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reg" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="169dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="121dp"
+        android:layout_marginTop="94dp"
+        android:layout_marginEnd="121dp"
+        android:layout_marginBottom="11dp"
+        android:text="Only Miau"
+        android:textAlignment="center"
+        android:textColor="#40E0D0"
+        android:textColorHighlight="#40E0D0"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
