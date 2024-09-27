@@ -13,6 +13,12 @@
         android:theme="@style/Theme.OnlyMiauu"
         tools:targetApi="31">
         <activity
+            android:name=".DarAdopcion_act"
+            android:exported="false" />
+        <activity
+            android:name=".Adopta_act"
+            android:exported="false" />
+        <activity
             android:name=".Home_act"
             android:exported="false" />
         <activity
