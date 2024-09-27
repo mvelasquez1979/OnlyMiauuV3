@@ -163,18 +163,18 @@
                 android:text="Aceptar"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.815"
+                app:layout_constraintHorizontal_bias="0.869"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/etContraUsuario"
                 app:layout_constraintVertical_bias="0.0" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/button2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="77dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="29dp"
+                android:layout_marginStart="61dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="55dp"
                 android:layout_marginBottom="35dp"
                 android:text="Atras"
                 app:layout_constraintBottom_toBottomOf="parent"
