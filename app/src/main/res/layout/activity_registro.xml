@@ -157,27 +157,26 @@
 
             <Button
                 android:id="@+id/btnAceptar"
-                android:layout_width="145dp"
-                android:layout_height="42dp"
-                android:layout_marginTop="18dp"
+                android:layout_width="133dp"
+                android:layout_height="46dp"
                 android:text="Aceptar"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.869"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/button4"
                 app:layout_constraintTop_toBottomOf="@+id/etContraUsuario"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintVertical_bias="0.326" />
 
             <Button
                 android:id="@+id/button4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="91dp"
-                android:layout_marginEnd="24dp"
-                android:text="Button"
+                android:layout_width="133dp"
+                android:layout_height="46dp"
+                android:text="Atras"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/btnAceptar"
+                app:layout_constraintHorizontal_bias="0.608"
                 app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="580dp" />
+                app:layout_constraintTop_toBottomOf="@+id/etContraUsuario"
+                app:layout_constraintVertical_bias="0.326" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
