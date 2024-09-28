@@ -1,6 +1,11 @@
 package com.example.onlymiauu;
 
 import android.os.Bundle;
+import android.text.Editable;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,17 +13,94 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class Activity_registro extends AppCompatActivity {
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.Map;
+
+public class Activity_registro extends AppCompatActivity implements  View.OnClickListener{
+
+    EditText etNombreUsuario, etEmailUsuario, etContraUsuario;
+    Button btnAtras,btnAceptar;
+    RequestQueue requestQueue;
+    //private static final String URL1 = "http://localhost/onlymiauu/registrar.php";
+    private static final String URL1 = "http://192.168.1.104/onlymiauu/registrar.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
+        EdgeToEdge.enable(this);// <------------------------------------
         setContentView(R.layout.activity_registro);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+
+        requestQueue = Volley.newRequestQueue(this);
+
+        //UI
+        initUI();
+
+        btnAceptar.setOnClickListener(this);
+        btnAtras.setOnClickListener(this);
+    }
+
+    private void initUI(){
+        //EditText
+        etNombreUsuario = findViewById(R.id.etNombreUsuario);
+        etEmailUsuario = findViewById(R.id.etEmailUsuario);
+        etContraUsuario = findViewById(R.id.etContraUsuario);
+
+        //Botones
+        btnAtras = findViewById(R.id.btnAtras);
+        btnAceptar = findViewById(R.id.btnAceptar);
+    }
+
+    @Override
+    public void onClick(View v){
+        int id = v.getId();
+        if (id == R.id.btnAceptar){
+            String nombre = etNombreUsuario.getText().toString().trim();
+            String username = etEmailUsuario.getText().toString().trim();
+            String pwd = etContraUsuario.getText().toString().trim();
+
+            registrarUsuario(nombre,username,pwd);
+        }else if (id == R.id.btnAtras){
+
+        }
+    }
+
+    private void registrarUsuario( String nombre, String username, String pwd){
+        StringRequest stringRequest = new StringRequest(
+                Request.Method.POST,
+                URL1,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        Toast.makeText(Activity_registro.this, "Usuario agregado", Toast.LENGTH_SHORT).show();
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        Toast.makeText(Activity_registro.this, "Error en agregar usuario", Toast.LENGTH_SHORT).show();
+                    }
+                }
+        ){
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String, String> params = new HashMap<>();
+                        params.put("nombre", nombre);
+                        params.put("username", username);
+                        params.put("pwd", pwd);
+                        return params;
+            }
+        };
+
+        requestQueue.add(stringRequest);
+
     }
 }
