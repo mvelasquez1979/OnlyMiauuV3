@@ -56,6 +56,8 @@ public class Administrador {
         return (Objects.equals(nombUsuario, "only") && Objects.equals(logUsuario, "1234"));
     }
 
+
+
     // Method Ingresar Usuario Nuevo
 
 
