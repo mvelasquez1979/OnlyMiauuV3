@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradients"
+    android:background="@drawable/color"
     android:textAlignment="center"
     tools:context=".MainActivity">
 
@@ -31,7 +31,6 @@
         android:layout_marginTop="18dp"
         android:layout_marginEnd="5dp"
         android:layout_marginBottom="69dp"
-        android:src="@drawable/felino"
         app:cardCornerRadius="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,6 +50,7 @@
                 android:layout_marginEnd="36dp"
                 android:layout_marginBottom="129dp"
                 android:text="Somos una App móvil, en la cual puedes encontrar tu proximo amigo felino. Estas a un paso de ser feliz."
+                android:textStyle="bold"
                 android:textAlignment="center"
                 android:textColor="#000000"
                 android:textColorHighlight="#000000"
@@ -75,8 +75,7 @@
                 android:text="Ingresar"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnRegistrar" />
+                app:layout_constraintStart_toStartOf="parent"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
@@ -90,9 +89,10 @@
         android:layout_marginEnd="121dp"
         android:layout_marginBottom="11dp"
         android:text="Only Miau"
+        android:textStyle="bold"
         android:textAlignment="center"
-        android:textColor="#40E0D0"
-        android:textColorHighlight="#40E0D0"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
         android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView4"
         app:layout_constraintEnd_toEndOf="parent"
