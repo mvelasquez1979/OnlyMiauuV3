@@ -1,7 +1,5 @@
 package com.example.onlymiauu;
 
-import android.annotation.SuppressLint;
-import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.view.View;
@@ -27,8 +25,7 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;
 
-public class
-Activity_registro extends AppCompatActivity implements  View.OnClickListener{
+public class Activity_registro extends AppCompatActivity implements  View.OnClickListener{
 
     EditText etNombreUsuario, etEmailUsuario, etContraUsuario;
     Button btnAtras,btnAceptar;
@@ -106,5 +103,4 @@ Activity_registro extends AppCompatActivity implements  View.OnClickListener{
         requestQueue.add(stringRequest);
 
     }
-
 }
