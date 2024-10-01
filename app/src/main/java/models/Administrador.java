@@ -1,9 +1,9 @@
 package models;
 
+
 import java.util.Objects;
 
 public class Administrador {
-
     //Variables
     private int    id_administrador;
     private String nombre;
@@ -51,14 +51,30 @@ public class Administrador {
         this.password = password;
     }
 
-    // Method Login
+    // Method para validar Login
     public boolean validaLogin(String nombUsuario, String logUsuario) {
         return (Objects.equals(nombUsuario, "only") && Objects.equals(logUsuario, "1234"));
     }
 
-
-
-    // Method Ingresar Usuario Nuevo
+    // Metodo para validar que no queden valores en blanco
+    public boolean textVacios(Integer cantValores, String valor1, String valor2, String valor3) {
+        boolean x;
+        switch (cantValores){
+            case 1:
+                x = (valor1.isEmpty());
+                break;
+            case 2:
+                x = (valor1.isEmpty() || valor2.isEmpty());
+                break;
+            case 3:
+                x = (valor1.isEmpty() || valor2.isEmpty() || valor3.isEmpty());
+                break;
+            default:
+                x = false;
+                break;
+        }
+        return x;
+    }
 
 
 }

@@ -26,6 +26,7 @@ public class Activity_ingeso extends AppCompatActivity {
         etUsername  = findViewById(R.id.etUsername);
         etPassword  = findViewById(R.id.etPassword);
         btnIngresar = findViewById(R.id.btnIngresar);
+        Intent miHome = new Intent(this, Home_act.class);
 
         btnIngresar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,7 +40,9 @@ public class Activity_ingeso extends AppCompatActivity {
                         //Toast.makeText(Activity_ingreso.this,"Por favor, ingrese nombre de Usuario y Contraseña", Toast.LENGTH_SHORT).show();
                     Toast.makeText(Activity_ingeso.this,"Por favor, ingrese nombre de Usuario y Contraseña", Toast.LENGTH_SHORT).show();
                 }else if(adUser.validaLogin(username,password)){
-                    Toast.makeText(Activity_ingeso.this,"Login correcto", Toast.LENGTH_SHORT).show();
+
+                    Toast.makeText(Activity_ingeso.this,"Login correcto", Toast.LENGTH_LONG).show();
+                    startActivity(miHome);
                 }else if(!adUser.validaLogin(username,password)){
                     Toast.makeText(Activity_ingeso.this,"Login incorrecto", Toast.LENGTH_SHORT).show();
                 }
@@ -52,5 +55,10 @@ public class Activity_ingeso extends AppCompatActivity {
         Intent miRegistro = new Intent(this, Activity_registro.class);
         startActivity(miRegistro);
     }
+
+    //public void irHome(View vista){
+    //    Intent miHome = new Intent(this, Home_act.class);
+    //    startActivity(miHome);
+    //}
 
 }
