@@ -40,6 +40,7 @@ dependencies {
     implementation(libs.lottie)
     implementation(libs.volley)
     implementation(libs.support.annotations)
+    implementation(libs.play.services.maps)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
