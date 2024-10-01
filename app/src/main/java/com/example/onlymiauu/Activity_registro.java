@@ -1,7 +1,7 @@
 package com.example.onlymiauu;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.text.Editable;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -9,9 +9,6 @@ import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -22,16 +19,17 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
 import java.util.HashMap;
-import java.util.LinkedList;
 import java.util.Map;
+
+import models.Administrador;
 
 public class Activity_registro extends AppCompatActivity implements  View.OnClickListener{
 
     EditText etNombreUsuario, etEmailUsuario, etContraUsuario;
     Button btnAtras,btnAceptar;
     RequestQueue requestQueue;
-    //private static final String URL1 = "http://localhost/onlymiauu/registrar.php";
     private static final String URL1 = "http://192.168.1.104/onlymiauu/registrar.php";
+    Administrador rUsuario = new Administrador();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,14 +61,18 @@ public class Activity_registro extends AppCompatActivity implements  View.OnClic
     public void onClick(View v){
         int id = v.getId();
         if (id == R.id.btnAceptar){
+
             String nombre = etNombreUsuario.getText().toString().trim();
             String username = etEmailUsuario.getText().toString().trim();
             String pwd = etContraUsuario.getText().toString().trim();
-
-            registrarUsuario(nombre,username,pwd);
+            if(!rUsuario.textVacios(3,nombre,username,pwd)) {
+                registrarUsuario(nombre, username, pwd);
+            }else{
+                Toast.makeText(Activity_registro.this,"Por favor, ingrese los datos completos", Toast.LENGTH_SHORT).show();
+            }
         }else if (id == R.id.btnAtras){
-
-        }
+            Intent miIngreso = new Intent(this, Activity_ingeso.class);
+            startActivity(miIngreso);        }
     }
 
     private void registrarUsuario( String nombre, String username, String pwd){
@@ -79,8 +81,12 @@ public class Activity_registro extends AppCompatActivity implements  View.OnClic
                 URL1,
                 new Response.Listener<String>() {
                     @Override
+
                     public void onResponse(String response) {
-                        Toast.makeText(Activity_registro.this, "Usuario agregado", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Activity_registro.this, "Usuario agregado", Toast.LENGTH_LONG).show();
+                        etNombreUsuario.setText("");
+                        etEmailUsuario.setText("");
+                        etContraUsuario.setText("");
                     }
                 },
                 new Response.ErrorListener() {
@@ -103,4 +109,6 @@ public class Activity_registro extends AppCompatActivity implements  View.OnClic
         requestQueue.add(stringRequest);
 
     }
+
+
 }
