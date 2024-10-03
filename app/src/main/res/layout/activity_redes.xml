@@ -5,22 +5,31 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/color"
     tools:context=".redes_act">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="477dp"
+        android:layout_height="847dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/animationfondo"
+        tools:ignore="MissingConstraints" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="413dp"
         android:layout_height="80dp"
         app:cardBackgroundColor="@color/design_default_color_secondary_variant"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.003">
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-2dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="79dp">
 
             <ImageButton
                 android:id="@+id/imageButton3"
@@ -41,12 +50,25 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Hello usuario"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.99"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.885" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="58dp"
+                android:layout_height="61dp"
+                android:layout_marginEnd="285dp"
+                app:layout_constraintEnd_toStartOf="@+id/imageButton3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/logomiaudos"
+                tools:layout_editor_absoluteY="11dp" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
