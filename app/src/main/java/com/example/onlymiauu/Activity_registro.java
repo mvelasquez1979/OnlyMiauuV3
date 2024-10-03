@@ -1,5 +1,6 @@
 package com.example.onlymiauu;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -28,7 +29,7 @@ public class Activity_registro extends AppCompatActivity implements  View.OnClic
     EditText etNombreUsuario, etEmailUsuario, etContraUsuario;
     Button btnAtras,btnAceptar;
     RequestQueue requestQueue;
-    private static final String URL1 = "http://192.168.1.104/onlymiauu/registrar.php";
+    private static final String URL1 = "http://192.168.10.184/onlymiauu/registrar.php";
     Administrador rUsuario = new Administrador();
 
     @Override
@@ -46,6 +47,7 @@ public class Activity_registro extends AppCompatActivity implements  View.OnClic
         btnAtras.setOnClickListener(this);
     }
 
+    @SuppressLint("WrongViewCast")
     private void initUI(){
         //EditText
         etNombreUsuario = findViewById(R.id.etNombreUsuario);
