@@ -93,27 +93,38 @@
                 android:layout_height="74dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.052"
+                app:layout_constraintHorizontal_bias="0.947"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.058"
+                app:layout_constraintVertical_bias="0.941"
                 app:srcCompat="@drawable/fb" />
 
             <ImageView
                 android:id="@+id/imageView14"
-                android:layout_width="91dp"
-                android:layout_height="84dp"
+                android:layout_width="87dp"
+                android:layout_height="72dp"
                 app:srcCompat="@drawable/ig"
                 tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="246dp" />
+                tools:layout_editor_absoluteY="258dp" />
 
             <ImageView
                 android:id="@+id/imageView15"
-                android:layout_width="89dp"
-                android:layout_height="87dp"
+                android:layout_width="86dp"
+                android:layout_height="72dp"
                 app:srcCompat="@drawable/wa"
-                tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="130dp" />
+                tools:layout_editor_absoluteX="151dp"
+                tools:layout_editor_absoluteY="258dp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="291dp"
+                android:layout_height="81dp"
+                android:text="Siguenos en nuestras redes!:"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="47dp"
+                tools:layout_editor_absoluteY="37dp" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
