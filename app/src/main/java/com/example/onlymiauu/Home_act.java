@@ -13,9 +13,6 @@ import androidx.core.view.WindowInsetsCompat;
 import com.airbnb.lottie.LottieAnimationView;
 
 public class Home_act extends AppCompatActivity {
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,12 +21,6 @@ public class Home_act extends AppCompatActivity {
 
         LottieAnimationView animationView = findViewById(R.id.animationView);
         animationView.setAnimation(R.raw.animation);
-
-
-
-
-
-
-    }
+  }
 
 }
