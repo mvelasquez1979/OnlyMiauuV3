@@ -5,14 +5,24 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/color"
     tools:context=".Home_act">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="460dp"
+        android:layout_height="743dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/animationfondo"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-22dp"
+        tools:layout_editor_absoluteY="-3dp" />
+
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView3"
-        android:layout_width="410dp"
-        android:layout_height="77dp"
-        android:layout_marginBottom="12dp"
+        android:layout_width="413dp"
+        android:layout_height="73dp"
         app:cardBackgroundColor="@color/design_default_color_secondary_variant"
         app:layout_constraintBottom_toTopOf="@+id/textView11"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,11 +39,14 @@
                 android:id="@+id/textView9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="9dp"
                 android:text="Hello usuario"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
-                tools:layout_editor_absoluteX="312dp"
-                tools:layout_editor_absoluteY="57dp" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
 
             <ImageView
                 android:id="@+id/imageView5"
@@ -47,11 +60,15 @@
                 android:id="@+id/imageButton2"
                 android:layout_width="44dp"
                 android:layout_height="41dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="34dp"
+                android:layout_marginBottom="8dp"
                 android:backgroundTint="#00009688"
                 android:tint="#000000"
-                app:srcCompat="@drawable/bottom_btn3"
-                tools:layout_editor_absoluteX="335dp"
-                tools:layout_editor_absoluteY="8dp" />
+                app:layout_constraintBottom_toTopOf="@+id/textView9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/bottom_btn3" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline"
@@ -90,11 +107,9 @@
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
-        android:layout_width="307dp"
-        android:layout_height="172dp"
-        android:layout_marginStart="70dp"
+        android:layout_width="360dp"
+        android:layout_height="178dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="69dp"
         android:layout_marginBottom="30dp"
         android:background="@color/design_default_color_secondary_variant"
         app:layout_constraintBottom_toTopOf="@+id/cardView9"
@@ -111,13 +126,14 @@
                 android:layout_width="304dp"
                 android:layout_height="173dp"
                 tools:ignore="MissingConstraints,UselessLeaf"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="0dp" />
+                tools:layout_editor_absoluteX="27dp"
+                tools:layout_editor_absoluteY="3dp" />
 
             <com.airbnb.lottie.LottieAnimationView
                 android:id="@+id/animationView"
                 android:layout_width="307dp"
                 android:layout_height="169dp"
+                app:layout_constraintBottom_toBottomOf="@+id/viewAnimator"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"

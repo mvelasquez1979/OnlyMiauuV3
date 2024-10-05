@@ -1,5 +1,6 @@
 package com.example.onlymiauu;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -28,16 +29,13 @@ public class Activity_registro extends AppCompatActivity implements  View.OnClic
     EditText etNombreUsuario, etEmailUsuario, etContraUsuario;
     Button btnAtras,btnAceptar;
     RequestQueue requestQueue;
-    //private static final String URL1 = "http://192.168.1.104/onlymiauu/registrar.php"; // Casa supremo Lider
-    private static final String URL1 = "http://192.168.25.121/onlymiauu/registrar.php"; // Cel de luis
-    //
+    private static final String URL1 = "http://192.168.10.184/onlymiauu/registrar.php";
     Administrador rUsuario = new Administrador();
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
+        EdgeToEdge.enable(this);// <------------------------------------
         setContentView(R.layout.activity_registro);
 
         requestQueue = Volley.newRequestQueue(this);
@@ -49,6 +47,7 @@ public class Activity_registro extends AppCompatActivity implements  View.OnClic
         btnAtras.setOnClickListener(this);
     }
 
+    @SuppressLint("WrongViewCast")
     private void initUI(){
         //EditText
         etNombreUsuario = findViewById(R.id.etNombreUsuario);
@@ -78,7 +77,7 @@ public class Activity_registro extends AppCompatActivity implements  View.OnClic
             startActivity(miIngreso);        }
     }
 
-    private void registrarUsuario(String nombre, String username, String pwd){
+    private void registrarUsuario( String nombre, String username, String pwd){
         StringRequest stringRequest = new StringRequest(
                 Request.Method.POST,
                 URL1,
@@ -112,5 +111,6 @@ public class Activity_registro extends AppCompatActivity implements  View.OnClic
         requestQueue.add(stringRequest);
 
     }
+
 
 }
