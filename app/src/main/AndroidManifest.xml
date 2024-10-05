@@ -16,6 +16,9 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".ayuda_act"
+            android:exported="false" />
+        <activity
             android:name=".redes_act"
             android:exported="false" />
         <activity
