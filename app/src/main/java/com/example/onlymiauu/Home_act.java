@@ -1,14 +1,9 @@
 package com.example.onlymiauu;
 
 import android.os.Bundle;
-import android.widget.ImageView;
-import android.widget.ViewFlipper;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.airbnb.lottie.LottieAnimationView;
 
@@ -23,8 +18,10 @@ public class Home_act extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_home);
 
+        //Animacion del gato en caja de la activity home
         LottieAnimationView animationView = findViewById(R.id.animationView);
         animationView.setAnimation(R.raw.animation);
+        animationView.setSpeed(0.3f); //Control de velocidad-cambia 0.3 por el factor que desees (menor a 1 es más lento)
 
 
 
