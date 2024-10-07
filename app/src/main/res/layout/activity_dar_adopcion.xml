@@ -5,13 +5,26 @@
     android:id="@+id/btn_envia"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/color"
     android:textAlignment="center"
     tools:context=".DarAdopcion_act">
 
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="460dp"
+        android:layout_height="780dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/animafondodos"
+        tools:ignore="MissingConstraints" />
+
+
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView14"
-        android:layout_width="411dp"
+        android:layout_width="410dp"
         android:layout_height="77dp"
         android:layout_marginStart="1dp"
         app:cardBackgroundColor="@color/design_default_color_secondary_variant"
