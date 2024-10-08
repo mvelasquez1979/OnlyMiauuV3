@@ -29,13 +29,13 @@ public class Activity_registro extends AppCompatActivity implements  View.OnClic
     EditText etNombreUsuario, etEmailUsuario, etContraUsuario;
     Button btnAtras,btnAceptar;
     RequestQueue requestQueue;
-    private static final String URL1 = "http://192.168.10.184/onlymiauu/registrar.php";
+    private static final String URL1 = "http://192.168.1.104/onlymiauu/registrar.php";
     Administrador rUsuario = new Administrador();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);// <------------------------------------
+        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_registro);
 
         requestQueue = Volley.newRequestQueue(this);
