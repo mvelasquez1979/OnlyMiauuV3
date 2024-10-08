@@ -11,6 +11,7 @@ constraintlayout = "2.1.4"
 volley = "1.2.1"
 supportAnnotations = "28.0.0"
 playServicesMaps = "19.0.0"
+annotation = "1.8.2"
 
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -24,6 +25,7 @@ constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayo
 volley = { group = "com.android.volley", name = "volley", version.ref = "volley" }
 support-annotations = { group = "com.android.support", name = "support-annotations", version.ref = "supportAnnotations" }
 play-services-maps = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "playServicesMaps" }
+annotation = { group = "androidx.annotation", name = "annotation", version.ref = "annotation" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

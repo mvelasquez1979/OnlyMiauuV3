@@ -1,18 +1,17 @@
 package com.example.onlymiauu;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
-
 
 import com.airbnb.lottie.LottieAnimationView;
 
 public class DarAdopcion_act extends AppCompatActivity {
 
+
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +21,7 @@ public class DarAdopcion_act extends AppCompatActivity {
 
         LottieAnimationView animationView = findViewById(R.id.animationView);
         animationView.setAnimation(R.raw.animation);
+
 
 
 
