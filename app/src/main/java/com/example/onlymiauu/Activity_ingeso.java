@@ -18,7 +18,6 @@ public class Activity_ingeso extends AppCompatActivity {
    EditText etUsername, etPassword;
    Button btnIngresar;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +45,7 @@ public class Activity_ingeso extends AppCompatActivity {
                     Toast.makeText(Activity_ingeso.this,"Login correcto" , Toast.LENGTH_LONG).show();
                     startActivity(miHome);
                 }else if(!adUser.validaLogin(username,password)){
+
                     Toast.makeText(Activity_ingeso.this,"Login incorrecto ", Toast.LENGTH_SHORT).show();
                 }
             }
@@ -56,6 +56,7 @@ public class Activity_ingeso extends AppCompatActivity {
     public void irRegistro(View vista){
         Intent miRegistro = new Intent(this, Activity_registro.class);
         startActivity(miRegistro);
+        overridePendingTransition(R.anim.derechaanima, R.anim.izquierdaanima);
     }
 
     //public void irHome(View vista){

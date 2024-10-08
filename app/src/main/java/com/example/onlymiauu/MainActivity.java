@@ -27,5 +27,6 @@ public class MainActivity extends AppCompatActivity {
     public void irIngreso(View vista){
         Intent miIngreso = new Intent(this, Activity_ingeso.class);
         startActivity(miIngreso);
+        overridePendingTransition(R.anim.derechaanima, R.anim.izquierdaanima);
     }
 }
