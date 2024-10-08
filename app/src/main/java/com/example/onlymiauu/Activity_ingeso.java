@@ -43,10 +43,11 @@ public class Activity_ingeso extends AppCompatActivity {
                     Toast.makeText(Activity_ingeso.this,"Por favor, ingrese nombre de Usuario y Contraseña", Toast.LENGTH_SHORT).show();
                 }else if(adUser.validaLogin(username,password)){
 
-                    Toast.makeText(Activity_ingeso.this,"Login correcto", Toast.LENGTH_LONG).show();
+                    Toast.makeText(Activity_ingeso.this,"Login correcto" , Toast.LENGTH_LONG).show();
                     startActivity(miHome);
                 }else if(!adUser.validaLogin(username,password)){
-                    Toast.makeText(Activity_ingeso.this,"Login incorrecto", Toast.LENGTH_SHORT).show();
+
+                    Toast.makeText(Activity_ingeso.this,"Login incorrecto ", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -56,6 +57,7 @@ public class Activity_ingeso extends AppCompatActivity {
     public void irRegistro(View vista){
         Intent miRegistro = new Intent(this, Activity_registro.class);
         startActivity(miRegistro);
+        overridePendingTransition(R.anim.derechaanima, R.anim.izquierdaanima);
     }
 
     //public void irHome(View vista){

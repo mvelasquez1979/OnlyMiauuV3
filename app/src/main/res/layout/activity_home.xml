@@ -2,21 +2,23 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/btn_envia"
+    android:id="@+id/gran"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Home_act">
 
+
     <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/animationView"
         android:layout_width="460dp"
-        android:layout_height="743dp"
+        android:layout_height="780dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_rawRes="@raw/animationfondo"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-22dp"
-        tools:layout_editor_absoluteY="-3dp" />
+        app:lottie_rawRes="@raw/animafondodos"
+        tools:ignore="MissingConstraints" />
 
 
     <androidx.cardview.widget.CardView
@@ -111,7 +113,7 @@
         android:layout_height="178dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="30dp"
-        android:background="@color/design_default_color_secondary_variant"
+        android:background="#00018786"
         app:layout_constraintBottom_toTopOf="@+id/cardView9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -169,14 +171,14 @@
                 android:layout_marginStart="28dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="40dp"
-                app:layout_constraintBottom_toTopOf="@+id/button"
+                app:layout_constraintBottom_toTopOf="@+id/btnAdopt"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/ini" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/btnAdopt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="43dp"
