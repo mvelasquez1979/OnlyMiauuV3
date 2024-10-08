@@ -16,8 +16,10 @@ import models.Administrador;
 public class Home_act extends AppCompatActivity {
 
 
-    Button btnAdopt, Textpersona;
+    Button btnAdopt,ButtonDar,ButtonRed,ButtonAyuda;
+    //Text Textpersona;
     Administrador person = new Administrador();
+
 
 
     @SuppressLint("WrongViewCast")
@@ -33,10 +35,13 @@ public class Home_act extends AppCompatActivity {
         animationView.setSpeed(0.3f); //Control de velocidad-cambia 0.3 por el factor que desees (menor a 1 es más lento)
 
         btnAdopt = findViewById(R.id.btnAdopt);
-        Textpersona = findViewById(R.id.Textpersona);
+        //Textpersona = findViewById(R.id.Textpersona);
+        ButtonDar = findViewById(R.id.ButtonDar);
+        ButtonRed = findViewById(R.id.ButtonRed);
+        ButtonAyuda = findViewById(R.id.ButtonAyuda);
 
 
-        Textpersona.setText("Hola "+ person.getNombre());
+        //Textpersona.setTextContent("Hola "+ person.getNombre());
 
 
         btnAdopt.setOnClickListener(new View.OnClickListener() {
@@ -47,6 +52,32 @@ public class Home_act extends AppCompatActivity {
                 overridePendingTransition(R.anim.derechaanima, R.anim.izquierdaanima);
             }
         });
+
+        ButtonDar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent= new Intent(Home_act.this,DarAdopcion_act.class);
+                startActivity(intent);
+            }
+        });
+
+        ButtonRed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent= new Intent(Home_act.this,redes_act.class);
+                startActivity(intent);
+            }
+        });
+
+        ButtonAyuda.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent= new Intent(Home_act.this,ayuda_act.class);
+                startActivity(intent);
+            }
+        });
+
+
 
 
 
