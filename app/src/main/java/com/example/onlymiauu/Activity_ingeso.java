@@ -39,7 +39,6 @@ public class Activity_ingeso extends AppCompatActivity {
                 Administrador adUser = new Administrador();
 
                 if (username.isEmpty() || password.isEmpty()){
-                        //Toast.makeText(Activity_ingreso.this,"Por favor, ingrese nombre de Usuario y Contraseña", Toast.LENGTH_SHORT).show();
                     Toast.makeText(Activity_ingeso.this,"Por favor, ingrese nombre de Usuario y Contraseña", Toast.LENGTH_SHORT).show();
                 }else if(adUser.validaLogin(username,password)){
 
@@ -59,10 +58,5 @@ public class Activity_ingeso extends AppCompatActivity {
         startActivity(miRegistro);
         overridePendingTransition(R.anim.derechaanima, R.anim.izquierdaanima);
     }
-
-    //public void irHome(View vista){
-    //    Intent miHome = new Intent(this, Home_act.class);
-    //    startActivity(miHome);
-    //}
 
 }
