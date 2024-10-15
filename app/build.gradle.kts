@@ -41,6 +41,7 @@ dependencies {
     implementation(libs.volley)
     implementation(libs.support.annotations)
     implementation(libs.play.services.maps)
+    implementation(libs.annotation)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

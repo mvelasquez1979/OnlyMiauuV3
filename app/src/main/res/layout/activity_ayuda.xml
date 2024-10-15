@@ -9,13 +9,13 @@
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animationView"
-        android:layout_width="460dp"
-        android:layout_height="743dp"
+        android:layout_width="582dp"
+        android:layout_height="1156dp"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
         app:lottie_rawRes="@raw/animationfondo"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-22dp"
+        tools:layout_editor_absoluteX="-142dp"
         tools:layout_editor_absoluteY="-3dp" />
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView3"
@@ -33,7 +33,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/Textpersona"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
@@ -62,7 +62,7 @@
                 android:layout_marginBottom="8dp"
                 android:backgroundTint="#00009688"
                 android:tint="#000000"
-                app:layout_constraintBottom_toTopOf="@+id/textView9"
+                app:layout_constraintBottom_toTopOf="@+id/Textpersona"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/bottom_btn3" />
@@ -152,10 +152,10 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.173"
+                app:layout_constraintHorizontal_bias="0.195"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.227" />
+                app:layout_constraintVertical_bias="0.263" />
 
             <EditText
                 android:id="@+id/editTextTextMultiLine"
@@ -166,6 +166,8 @@
                 android:ems="10"
                 android:gravity="start|top"
                 android:inputType="textMultiLine"
+                android:scrollbars="vertical"
+                android:textSize="14sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.486"
@@ -175,48 +177,34 @@
 
             <EditText
                 android:id="@+id/editTextText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="210dp"
+                android:layout_height="28dp"
                 android:layout_marginBottom="120dp"
                 android:background="#FFFFFF"
                 android:ems="10"
                 android:inputType="text"
+                android:textSize="24sp"
                 app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLine"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.372"
+                app:layout_constraintHorizontal_bias="0.392"
                 app:layout_constraintStart_toEndOf="@+id/textView18"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.689" />
-
-            <EditText
-                android:id="@+id/editTextText2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="120dp"
-                android:background="#FFFFFF"
-                android:ems="10"
-                android:inputType="text"
-                app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLine"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.372"
-                app:layout_constraintStart_toEndOf="@+id/textView18"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.689" />
+                app:layout_constraintVertical_bias="0.666" />
 
             <EditText
                 android:id="@+id/editTextText3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="211dp"
+                android:layout_height="30dp"
                 android:layout_marginBottom="72dp"
                 android:background="#FFFFFF"
                 android:ems="10"
                 android:inputType="text"
                 app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLine"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.372"
+                app:layout_constraintHorizontal_bias="0.4"
                 app:layout_constraintStart_toEndOf="@+id/textView20"
                 app:layout_constraintTop_toBottomOf="@+id/editTextText"
-                app:layout_constraintVertical_bias="0.878" />
+                app:layout_constraintVertical_bias="1.0" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>

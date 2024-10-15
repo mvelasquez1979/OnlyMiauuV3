@@ -52,11 +52,9 @@ public class Activity_ingeso extends AppCompatActivity {
         });
 
     }
-
     public void irRegistro(View vista){
         Intent miRegistro = new Intent(this, Activity_registro.class);
         startActivity(miRegistro);
-        overridePendingTransition(R.anim.derechaanima, R.anim.izquierdaanima);
     }
 
 }
