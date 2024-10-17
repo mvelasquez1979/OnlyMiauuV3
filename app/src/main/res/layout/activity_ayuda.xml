@@ -211,27 +211,6 @@
                 app:layout_constraintTop_toBottomOf="@+id/editTextText"
                 app:layout_constraintVertical_bias="1.0" />
 
-            <TextView
-                android:id="@+id/tvayuda"
-                android:layout_width="55dp"
-                android:layout_height="16dp"
-                android:layout_marginTop="76dp"
-                android:text="TextView"
-                app:layout_constraintEnd_toEndOf="@+id/editTextTextMultiLine"
-                app:layout_constraintHorizontal_bias="0.503"
-                app:layout_constraintStart_toStartOf="@+id/editTextTextMultiLine"
-                app:layout_constraintTop_toTopOf="@+id/editTextTextMultiLine" />
-
-            <Spinner
-                android:id="@+id/spnayuda"
-                android:layout_width="273dp"
-                android:layout_height="57dp"
-                app:layout_constraintBottom_toBottomOf="@+id/editTextTextMultiLine"
-                app:layout_constraintEnd_toEndOf="@+id/editTextTextMultiLine"
-                app:layout_constraintStart_toStartOf="@+id/editTextTextMultiLine"
-                app:layout_constraintTop_toBottomOf="@+id/tvayuda"
-                app:layout_constraintVertical_bias="0.653" />
-
             <Button
                 android:id="@+id/btnregen"
                 android:layout_width="wrap_content"
