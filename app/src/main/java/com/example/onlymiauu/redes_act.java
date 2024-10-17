@@ -28,7 +28,7 @@ public class redes_act extends AppCompatActivity {
             return insets;
         });
 
-        btnrege = findViewById(R.id.btnrege);
+        btnrege = findViewById(R.id.btnregen);
 
 
         btnrege.setOnClickListener(new View.OnClickListener() {
