@@ -11,12 +11,14 @@
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animationView"
-        android:layout_width="516dp"
-        android:layout_height="1134dp"
+        android:layout_width="616dp"
+        android:layout_height="1239dp"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
         app:lottie_rawRes="@raw/animafondodos"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-100dp"
+        tools:layout_editor_absoluteY="-105dp" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView14"
@@ -93,8 +95,11 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:layout_width="357dp"
-        android:layout_height="746dp"
+        android:layout_width="368dp"
+        android:layout_height="620dp"
+        android:background="#009688"
+        app:cardBackgroundColor="@color/design_default_color_secondary_variant"
+        app:cardCornerRadius="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -228,6 +233,7 @@
                 android:layout_width="265dp"
                 android:layout_height="55dp"
                 android:text="Ingresa los datos del gatito a dar en adopción:"
+                android:textColor="#FFFCFC"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
