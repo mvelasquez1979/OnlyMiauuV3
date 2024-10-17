@@ -45,7 +45,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
                 android:layout_marginBottom="9dp"
-                android:text="Hello usuario"
+                android:text="Hello Only"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -58,7 +58,8 @@
                 android:layout_height="60dp"
                 app:srcCompat="@drawable/logomiaudos"
                 tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="8dp" />
+                tools:layout_editor_absoluteY="8dp"
+                tools:ignore="MissingConstraints" />
 
             <ImageButton
                 android:id="@+id/imageButton2"
@@ -68,11 +69,11 @@
                 android:layout_marginEnd="34dp"
                 android:layout_marginBottom="8dp"
                 android:backgroundTint="#00009688"
-                android:tint="#000000"
                 app:layout_constraintBottom_toTopOf="@+id/Textpersona"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/bottom_btn3" />
+                app:srcCompat="@drawable/bottom_btn3"
+                app:tint="#000000" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline"
@@ -92,6 +93,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView8"
         android:layout_width="364dp"
         android:layout_height="412dp"
         app:cardBackgroundColor="@color/design_default_color_secondary_variant"
@@ -99,7 +101,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView5" >
+        app:layout_constraintTop_toBottomOf="@+id/cardView5">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -190,4 +192,15 @@
                 app:layout_constraintVertical_bias="0.704" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnrege"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:text="Atras"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
