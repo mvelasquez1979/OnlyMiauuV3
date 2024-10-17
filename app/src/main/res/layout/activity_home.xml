@@ -9,8 +9,8 @@
 
 
     <com.airbnb.lottie.LottieAnimationView
-        android:layout_width="588dp"
-        android:layout_height="1289dp"
+        android:layout_width="612dp"
+        android:layout_height="1283dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,6 +26,7 @@
         android:layout_width="413dp"
         android:layout_height="73dp"
         app:cardBackgroundColor="@color/design_default_color_secondary_variant"
+        app:cardCornerRadius="30dp"
         app:layout_constraintBottom_toTopOf="@+id/textView11"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -43,7 +44,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
                 android:layout_marginBottom="9dp"
-                android:text="Hello usuario"
+                android:text="Hello Only"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -56,7 +57,7 @@
                 android:layout_height="60dp"
                 app:srcCompat="@drawable/logomiaudos"
                 tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="8dp" />
+                tools:layout_editor_absoluteY="10dp" />
 
             <ImageButton
                 android:id="@+id/imageButton2"
@@ -70,7 +71,8 @@
                 app:layout_constraintBottom_toTopOf="@+id/Textpersona"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/bottom_btn3" />
+                app:srcCompat="@drawable/bottom_btn3"
+                tools:ignore="UseAppTint" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline"
@@ -198,7 +200,7 @@
         android:layout_width="174dp"
         android:layout_height="186dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="26dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="8dp"
         app:cardBackgroundColor="@color/design_default_color_secondary_variant"

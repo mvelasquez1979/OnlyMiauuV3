@@ -11,8 +11,8 @@
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animationView"
-        android:layout_width="527dp"
-        android:layout_height="1153dp"
+        android:layout_width="522dp"
+        android:layout_height="1108dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,6 +26,7 @@
         android:id="@+id/cardView"
         android:layout_width="390dp"
         android:layout_height="625dp"
+        android:layout_marginTop="2dp"
         app:cardBackgroundColor="@color/design_default_color_secondary_variant"
         app:cardCornerRadius="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -200,9 +201,11 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView6"
-        android:layout_width="409dp"
+        android:layout_width="420dp"
         android:layout_height="89dp"
+        android:textAlignment="center"
         app:cardBackgroundColor="@color/design_default_color_secondary_variant"
+        app:cardCornerRadius="30dp"
         app:layout_constraintBottom_toTopOf="@+id/cardView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -210,32 +213,38 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="85dp">
+            android:layout_height="match_parent">
 
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="69dp"
                 android:layout_height="58dp"
+                android:layout_marginStart="76dp"
                 android:layout_marginTop="9dp"
-                android:layout_marginEnd="16dp"
                 android:layout_marginBottom="10dp"
                 android:src="@drawable/logomiaudos"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageButton
-                android:id="@+id/btnback"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="7dp"
-                android:layout_marginTop="17dp"
-                android:layout_marginBottom="16dp"
-                android:backgroundTint="#00009688"
-                android:src="@drawable/back"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="188dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="88dp"
+                android:layout_marginBottom="20dp"
+                android:text="Only Miau"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
