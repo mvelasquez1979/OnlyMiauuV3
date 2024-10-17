@@ -92,9 +92,6 @@ public class DarAdopcion_act extends AppCompatActivity {
             }
         });
 
-        /*super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);*/
-
         foto_gallery = (ImageView)findViewById(R.id.foto_gallery);
 
         foto_gallery.setOnClickListener(new View.OnClickListener() {
