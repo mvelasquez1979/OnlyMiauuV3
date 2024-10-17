@@ -6,28 +6,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:textAlignment="center"
+    android:background="@color/design_default_color_secondary_variant"
     tools:context=".DarAdopcion_act">
+
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animationView"
-        android:layout_width="460dp"
-        android:layout_height="780dp"
+        android:layout_width="435dp"
+        android:layout_height="801dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.501"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
         app:lottie_rawRes="@raw/animafondodos"
         tools:ignore="MissingConstraints" />
 
-
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView14"
-        android:layout_width="410dp"
+        android:layout_width="413dp"
         android:layout_height="77dp"
-        android:layout_marginStart="1dp"
         app:cardBackgroundColor="@color/design_default_color_secondary_variant"
+        app:cardCornerRadius="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -36,30 +39,45 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <ImageButton
-                android:id="@+id/imageButton5"
-                android:layout_width="66dp"
-                android:layout_height="47dp"
-                android:layout_marginStart="7dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginBottom="15dp"
-                android:background="#00009688"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/back" />
-
             <ImageView
                 android:id="@+id/imageView11"
                 android:layout_width="72dp"
                 android:layout_height="63dp"
+                android:layout_marginStart="4dp"
                 android:layout_marginTop="9dp"
-                android:layout_marginEnd="6dp"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="9dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/logomiaudos" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="43dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="24dp"
+                android:tint="#000000"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/logomiaudos" />
+                app:srcCompat="@drawable/bottom_btn3" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="5dp"
+                android:text="Hello Usuario"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView6" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
