@@ -287,8 +287,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Button"
-                tools:layout_editor_absoluteX="253dp"
-                tools:layout_editor_absoluteY="687dp" />
+                tools:layout_editor_absoluteX="229dp"
+                tools:layout_editor_absoluteY="697dp" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
