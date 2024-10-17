@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/spnEsteril"
+    android:id="@+id/gran"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:textAlignment="center"
@@ -11,14 +11,12 @@
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animationView"
-        android:layout_width="616dp"
-        android:layout_height="1239dp"
+        android:layout_width="516dp"
+        android:layout_height="1134dp"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
         app:lottie_rawRes="@raw/animafondodos"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-100dp"
-        tools:layout_editor_absoluteY="-105dp" />
+        tools:ignore="MissingConstraints" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView14"
@@ -95,11 +93,8 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:layout_width="368dp"
-        android:layout_height="620dp"
-        android:background="#009688"
-        app:cardBackgroundColor="@color/design_default_color_secondary_variant"
-        app:cardCornerRadius="30dp"
+        android:layout_width="357dp"
+        android:layout_height="746dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -233,7 +228,6 @@
                 android:layout_width="265dp"
                 android:layout_height="55dp"
                 android:text="Ingresa los datos del gatito a dar en adopción:"
-                android:textColor="#FFFCFC"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -264,7 +258,7 @@
                 app:layout_constraintVertical_bias="0.421" />
 
             <EditText
-                android:id="@+id/etFechaNac"
+                android:id="@+id/editTextDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -282,35 +276,19 @@
                 android:layout_height="160dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.389"
+                app:layout_constraintHorizontal_bias="0.463"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.919"
+                app:layout_constraintVertical_bias="0.902"
                 app:srcCompat="@drawable/adoptagato" />
 
             <Button
                 android:id="@+id/btnGuardar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Guardar"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.764"
-                app:layout_constraintStart_toEndOf="@+id/foto_gallery"
-                app:layout_constraintTop_toBottomOf="@+id/spnSexo"
-                app:layout_constraintVertical_bias="0.955" />
-
-            <Button
-                android:id="@+id/btnAtrasD"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Atras"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/foto_gallery"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView26"
-                app:layout_constraintVertical_bias="0.946" />
+                android:text="Button"
+                tools:layout_editor_absoluteX="253dp"
+                tools:layout_editor_absoluteY="687dp" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
