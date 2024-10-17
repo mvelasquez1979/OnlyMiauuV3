@@ -8,11 +8,10 @@
     tools:ignore="ExtraText">
 
     //Codigo de implementacion para animacion de lottie airbnb
-
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animationView"
-        android:layout_width="620dp"
-        android:layout_height="1440dp"
+        android:layout_width="460dp"
+        android:layout_height="780dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
