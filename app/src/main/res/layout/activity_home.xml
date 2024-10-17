@@ -9,8 +9,8 @@
 
 
     <com.airbnb.lottie.LottieAnimationView
-        android:layout_width="460dp"
-        android:layout_height="780dp"
+        android:layout_width="612dp"
+        android:layout_height="1283dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,6 +26,7 @@
         android:layout_width="413dp"
         android:layout_height="73dp"
         app:cardBackgroundColor="@color/design_default_color_secondary_variant"
+        app:cardCornerRadius="30dp"
         app:layout_constraintBottom_toTopOf="@+id/textView11"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -56,7 +57,7 @@
                 android:layout_height="60dp"
                 app:srcCompat="@drawable/logomiaudos"
                 tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="8dp" />
+                tools:layout_editor_absoluteY="10dp" />
 
             <ImageButton
                 android:id="@+id/imageButton2"
