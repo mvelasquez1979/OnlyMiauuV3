@@ -11,18 +11,21 @@
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animationView"
-        android:layout_width="516dp"
-        android:layout_height="1134dp"
+        android:layout_width="567dp"
+        android:layout_height="1287dp"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
         app:lottie_rawRes="@raw/animafondodos"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-50dp"
+        tools:layout_editor_absoluteY="-152dp" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView14"
         android:layout_width="410dp"
         android:layout_height="77dp"
         app:cardBackgroundColor="@color/design_default_color_secondary_variant"
+        app:cardCornerRadius="30dp"
         tools:layout_editor_absoluteX="2dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -93,8 +96,11 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:layout_width="357dp"
-        android:layout_height="746dp"
+        android:layout_width="360dp"
+        android:layout_height="619dp"
+        android:background="#009688"
+        app:cardBackgroundColor="@color/design_default_color_secondary_variant"
+        app:cardCornerRadius="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -111,7 +117,7 @@
                 android:layout_height="wrap_content"
                 android:text="Nombre del Gatito:"
                 android:textAlignment="center"
-                android:textColor="#000000"
+                android:textColor="#FFFFFF"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -155,7 +161,7 @@
                 android:layout_height="wrap_content"
                 android:text="Edad:"
                 android:textAlignment="center"
-                android:textColor="#000000"
+                android:textColor="#FFFFFF"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -170,7 +176,7 @@
                 android:layout_height="wrap_content"
                 android:text="Estéril:"
                 android:textAlignment="center"
-                android:textColor="#000000"
+                android:textColor="#FFFFFF"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -185,7 +191,7 @@
                 android:layout_height="wrap_content"
                 android:text="Fecha de nacimiento:"
                 android:textAlignment="center"
-                android:textColor="#000000"
+                android:textColor="#FFFDFD"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -199,7 +205,7 @@
                 android:layout_height="wrap_content"
                 android:text="Haz clic para agregar imagen"
                 android:textAlignment="center"
-                android:textColor="#000000"
+                android:textColor="#FFFFFF"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -214,7 +220,7 @@
                 android:layout_height="wrap_content"
                 android:text="Sexo:"
                 android:textAlignment="center"
-                android:textColor="#000000"
+                android:textColor="#FFFFFF"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -228,6 +234,8 @@
                 android:layout_width="265dp"
                 android:layout_height="55dp"
                 android:text="Ingresa los datos del gatito a dar en adopción:"
+                android:textAlignment="center"
+                android:textColor="#FFFCFC"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

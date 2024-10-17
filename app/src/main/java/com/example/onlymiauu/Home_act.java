@@ -11,14 +11,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.airbnb.lottie.LottieAnimationView;
 
-import models.Administrador;
-
 public class Home_act extends AppCompatActivity {
 
 
     Button btnAdopt,ButtonDar,ButtonRed,ButtonAyuda;
-    //Text Textpersona;
-    Administrador person = new Administrador();
 
 
 
@@ -35,7 +31,6 @@ public class Home_act extends AppCompatActivity {
         animationView.setSpeed(0.3f); //Control de velocidad-cambia 0.3 por el factor que desees (menor a 1 es más lento)
 
         btnAdopt = findViewById(R.id.btnAdopt);
-        //Textpersona = findViewById(R.id.Textpersona);
         ButtonDar = findViewById(R.id.ButtonDar);
         ButtonRed = findViewById(R.id.ButtonRed);
         ButtonAyuda = findViewById(R.id.ButtonAyuda);
