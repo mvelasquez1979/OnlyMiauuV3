@@ -282,19 +282,23 @@
                 android:layout_height="160dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.463"
+                app:layout_constraintHorizontal_bias="0.389"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.902"
+                app:layout_constraintVertical_bias="0.919"
                 app:srcCompat="@drawable/adoptagato" />
 
             <Button
                 android:id="@+id/btnGuardar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Button"
-                tools:layout_editor_absoluteX="229dp"
-                tools:layout_editor_absoluteY="697dp" />
+                android:text="Guardar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.764"
+                app:layout_constraintStart_toEndOf="@+id/foto_gallery"
+                app:layout_constraintTop_toBottomOf="@+id/spnSexo"
+                app:layout_constraintVertical_bias="0.955" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
