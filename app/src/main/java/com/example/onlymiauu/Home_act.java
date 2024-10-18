@@ -41,9 +41,6 @@ public class Home_act extends AppCompatActivity {
         ButtonAyuda = findViewById(R.id.ButtonAyuda);
 
 
-        //Textpersona.setTextContent("Hola "+ person.getNombre());
-
-
         btnAdopt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

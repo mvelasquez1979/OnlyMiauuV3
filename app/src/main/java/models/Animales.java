@@ -10,7 +10,7 @@ public class Animales {
     private boolean esteril;
     private Date fechaNac;
     private String foto;
-
+    private Date fechaIngreso;
 
     // Constructor
     public Animales(String nombre, int edad, String color, String sexo, boolean esteril, Date fechaNac, String foto) {
@@ -20,6 +20,10 @@ public class Animales {
         this.sexo = sexo;
         this.esteril = esteril;
         this.foto = foto;
+    }
+
+    public Animales() {
+
     }
 
     // Método para mostrar información
