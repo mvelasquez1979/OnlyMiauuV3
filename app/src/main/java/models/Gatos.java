@@ -11,6 +11,10 @@ public class Gatos extends Animales{
         this.raza = raza;
     }
 
+    public Gatos() {
+        super();
+    }
+
     @Override
     public void mostrarInfo() {
         super.mostrarInfo(); // Llama al método de la clase base
@@ -26,7 +30,5 @@ public class Gatos extends Animales{
     public void setRaza() {
         this.raza = raza;
     }
-
-
 
 }

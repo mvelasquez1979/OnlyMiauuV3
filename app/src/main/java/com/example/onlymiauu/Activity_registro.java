@@ -29,7 +29,7 @@ public class Activity_registro extends AppCompatActivity implements  View.OnClic
     EditText etNombreUsuario, etEmailUsuario, etContraUsuario;
     Button btnAtras,btnAceptar;
     RequestQueue requestQueue;
-    private static final String URL1 = "http://192.168.10.184/onlymiauu/registrar.php";
+    private static final String URL1 = "http://192.168.56.1/onlymiauu/registrar.php";
     Administrador rUsuario = new Administrador();
 
     @Override
@@ -50,9 +50,9 @@ public class Activity_registro extends AppCompatActivity implements  View.OnClic
     @SuppressLint("WrongViewCast")
     private void initUI(){
         //EditText
-        etNombreUsuario = findViewById(R.id.etNombreUsuario);
-        etEmailUsuario = findViewById(R.id.etEmailUsuario);
-        etContraUsuario = findViewById(R.id.etContraUsuario);
+        etNombreUsuario = findViewById(R.id.etNombre);
+        etEmailUsuario = findViewById(R.id.etRaza);
+        etContraUsuario = findViewById(R.id.etColores);
 
         //Botones
         btnAtras = findViewById(R.id.btnAtras);
@@ -101,10 +101,10 @@ public class Activity_registro extends AppCompatActivity implements  View.OnClic
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> params = new HashMap<>();
-                        params.put("nombre", nombre);
-                        params.put("username", username);
-                        params.put("pwd", pwd);
-                        return params;
+                params.put("nombre", nombre);
+                params.put("username", username);
+                params.put("pwd", pwd);
+                return params;
             }
         };
 

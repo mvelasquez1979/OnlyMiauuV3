@@ -88,7 +88,7 @@
                 app:layout_constraintVertical_bias="0.0" />
 
             <EditText
-                android:id="@+id/etNombreUsuario"
+                android:id="@+id/etNombre"
                 android:layout_width="263dp"
                 android:layout_height="38dp"
                 android:layout_marginStart="92dp"
@@ -120,11 +120,11 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.217"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/etNombreUsuario"
+                app:layout_constraintTop_toBottomOf="@+id/etNombre"
                 app:layout_constraintVertical_bias="1.0" />
 
             <EditText
-                android:id="@+id/etEmailUsuario"
+                android:id="@+id/etRaza"
                 android:layout_width="260dp"
                 android:layout_height="41dp"
                 android:layout_marginStart="94dp"
@@ -152,11 +152,11 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.254"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/etEmailUsuario"
+                app:layout_constraintTop_toBottomOf="@+id/etRaza"
                 app:layout_constraintVertical_bias="1.0" />
 
             <EditText
-                android:id="@+id/etContraUsuario"
+                android:id="@+id/etColores"
                 android:layout_width="258dp"
                 android:layout_height="40dp"
                 android:layout_marginTop="3dp"
@@ -179,7 +179,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/btnAtras"
-                app:layout_constraintTop_toBottomOf="@+id/etContraUsuario"
+                app:layout_constraintTop_toBottomOf="@+id/etColores"
                 app:layout_constraintVertical_bias="0.326" />
 
             <Button
@@ -192,7 +192,7 @@
                 app:layout_constraintEnd_toStartOf="@+id/btnAceptar"
                 app:layout_constraintHorizontal_bias="0.608"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/etContraUsuario"
+                app:layout_constraintTop_toBottomOf="@+id/etColores"
                 app:layout_constraintVertical_bias="0.326" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -233,6 +233,7 @@
                 android:layout_marginBottom="16dp"
                 android:backgroundTint="#00009688"
                 android:src="@drawable/back"
+                android:onClick="irIngreso"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />

@@ -44,7 +44,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
                 android:layout_marginBottom="9dp"
-                android:text="Hello usuario"
+                android:text="Hello Only"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
