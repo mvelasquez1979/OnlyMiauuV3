@@ -66,11 +66,11 @@
                 android:layout_marginEnd="29dp"
                 android:layout_marginBottom="8dp"
                 android:backgroundTint="#00009688"
-                android:tint="#000000"
                 app:layout_constraintBottom_toTopOf="@+id/Textpersona"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/bottom_btn3" />
+                app:srcCompat="@drawable/bottom_btn3"
+                app:tint="#000000" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline"

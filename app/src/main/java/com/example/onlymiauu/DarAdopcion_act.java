@@ -5,7 +5,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -72,6 +71,19 @@ public class DarAdopcion_act extends AppCompatActivity implements View.OnClickLi
         spnSexos.setAdapter(adapterSexo);
 
         foto_gallery.setOnClickListener(v -> openGallery());
+
+
+        btnAtras.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DarAdopcion_act.this,Home_act.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+
     }
 
     private void registrarMascota(String nombre, String raza, String vcolor, String sexo) {
