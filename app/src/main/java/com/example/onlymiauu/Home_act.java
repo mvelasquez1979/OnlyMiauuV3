@@ -36,7 +36,7 @@ public class Home_act extends AppCompatActivity {
         ButtonAyuda = findViewById(R.id.ButtonAyuda);
 
 
-        //Textpersona.setTextContent("Hola "+ person.getNombre());
+        //Botones para cambios de activity
 
 
         btnAdopt.setOnClickListener(new View.OnClickListener() {
